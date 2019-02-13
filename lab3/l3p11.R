@@ -1,0 +1,10 @@
+#built in functions
+v=c(1:10)
+print(paste("Mean",mean(v)))
+print(paste("Median",median(v)))
+print(paste("Var",var(v)))
+print(paste("sd",sd(v)))
+print(paste("scale",scale(v)))
+print(paste("summary",summary(v)))
+print(paste("rank",rank(v)))
+print(paste("quantile",quantile(v)))    

@@ -1,0 +1,17 @@
+hcf=function(a,b)
+{
+  if(a==0)
+    return (b)
+  if(b==0)
+    return (a)
+  if (a == b) 
+    return (a) 
+  if (a > b) 
+    return (hcf(a-b, b)) 
+  return (hcf(a, b-a))
+}
+print("Enter 2 numbers\n")
+a=as.integer(readline())
+b=as.integer(readline())
+cat('HCF=',hcf(a,b))
+cat('LCM=',(a*b/hcf(b,a)))

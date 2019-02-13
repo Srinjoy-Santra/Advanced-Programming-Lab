@@ -1,0 +1,11 @@
+a=as.integer(readline())
+print(a)
+b=a
+r=0
+while(a>0)
+{
+  r=r*10+(a%%10)
+  print(r)
+  a=a%/%10
+}
+print(r==b)
