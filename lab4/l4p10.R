@@ -3,3 +3,4 @@ list_data[4]=4
 print(list_data)
 list_data[2]=NULL
 print(list_data)
+
