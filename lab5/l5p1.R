@@ -7,10 +7,11 @@ linki=gsub(' ','',linkin)
 
 cat("removed space=",nchar(linki))
 
-linki=gsub('a','',linkin)
-linki=gsub('e','',linki)
-linki=gsub('i','',linki)
-linki=gsub('o','',linki)
-linki=gsub('u','',linki)
+vowels = c('a','e','i','o','u','A','E','I','O','U')
+linki=linkin
+for(v in vowels){
+  linki=gsub(v,'',linki)
+}
+
 
 cat("Vowels in the ",nchar(linkin)-nchar(linki))

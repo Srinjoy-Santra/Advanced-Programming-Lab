@@ -7,13 +7,12 @@ for (i in v) {cat(intToUtf8(strtoi(i)))}
 m=matrix(seq(1:16),4,4,byrow = TRUE,dimnames = list(c('a','b','c','d'),c('w','x','y','z')))
 n=matrix(seq(1:16),4,4,byrow = FALSE)
 print(paste(m,n,m%/%n))
-print(m)
+print(m%/%n)
 print(t(m))
 
 arr=c(1,4,2,6,4,8,7,9,1,4)
 sarr=sort(arr,decreasing = TRUE)
 print(sarr)
-
 
 cb=cbind(arr,sarr)
 print(cb)

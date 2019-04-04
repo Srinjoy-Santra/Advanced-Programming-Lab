@@ -11,9 +11,17 @@ who are admitted on or after 1st june 2016
 ds = read.csv('C:\\Users\\nEW u\\Documents\\R\\Advanced Programming Lab\\lab5\\dataset.csv')
 print(ds)
 
-# x=subset(ds,branch="cse")
-for(l in ds){
-  print(l)
-}
+nds=subset(ds,percent>80)
 
-write.csv(x,'outset.csv')
+write.csv(nds,'outset.csv')
+a=max(ds$percent)
+maxper = subset(ds,percent == a)
+print(maxper)
+
+csen = subset(ds,percent > 90 & branch == 'cse')
+print(csen)
+
+above = subset(ds, as.Date(doa, "%d-%b-%Y") >= as.Date('01-Jun-2016', "%d-%b-%Y"))
+
+
+print(as.Date("01-Jun-2016","%d-%b-%Y"))
